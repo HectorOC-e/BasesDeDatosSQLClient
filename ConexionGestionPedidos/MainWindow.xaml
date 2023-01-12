@@ -1,0 +1,23 @@
+﻿<Window x:Class="ConexionGestionPedidos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConexionGestionPedidos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="564" Width="800"
+        Activated="Window_Activated">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Clientes" HorizontalAlignment="Left" Margin="44,36,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Arial"/>
+        <ListBox Name="ListaClientes" MouseDoubleClick="ListaClientes_MouseDoubleClick" Margin="11,100,633,191"/>
+        <Label Content="Pedidos" HorizontalAlignment="Left" Margin="213,36,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Arial"/>
+        <ListBox Name="ListaPedido" Margin="184,100,469,191"/>
+        <ListBox Name="ListaTodosPedidos"  Margin="347,100,23,60"/>
+        <Label Content="Todos los pedidos" HorizontalAlignment="Left" Margin="475,36,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Arial"/>
+        <Button Name="btnBorrar" Content="Eliminar" HorizontalAlignment="Left" Margin="347,66,0,0" VerticalAlignment="Top" Height="29" Width="84" Click="btnBorrar_Click"/>
+        <Button Content="Insertar" HorizontalAlignment="Left" Margin="10,368,0,0" VerticalAlignment="Top" Height="40" Width="79" Click="Button_Click"/>
+        <Button Content="Borrar" HorizontalAlignment="Left" Margin="94,368,0,0" VerticalAlignment="Top" Height="40" Width="79" Click="Button_Click_1"/>
+        <TextBox Name="txtCliente" HorizontalAlignment="Left" Margin="11,428,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Name="btnActualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="184,368,0,0" VerticalAlignment="Top" Height="40" Width="147" Click="btnActualizar_Click"/>
+    </Grid>
+</Window>
